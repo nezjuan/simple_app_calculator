@@ -2,18 +2,19 @@ from calculator_functions import UserInput, CalculatorFunctions
 while True:
     print(" * Simple Calculator App * ")
 
-    UserInput() 
+    user = UserInput()
+    user.ask_user(Operator=None, Num1=None, Num2=None) 
 
-    if UserInput.operator == "add":
+    if user.operator == "add":
         CalculatorFunctions.add()
 
-    elif UserInput.operator == "subtract":
+    elif user.operator == "subtract":
         CalculatorFunctions.subtract()
 
-    elif UserInput.operator == "multiply":
+    elif user.operator == "multiply":
         CalculatorFunctions.multiply()
 
-    elif UserInput.operator == "divide":
+    elif user.operator == "divide":
         CalculatorFunctions.divide()
     
     choice=input("Operate more? (Y/N): ")
