@@ -27,6 +27,10 @@ while True:
 
     while True:
         choice=input("Operate more? (Y/N): ")
-        if choice.upper == "N":
+        if choice.upper() == "N":
             print("Thank you for using the application!")
+            exit()
+        elif choice.upper() == "Y":
             break
+        else:
+            print("Invalid Input!")
