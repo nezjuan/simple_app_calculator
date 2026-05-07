@@ -1,6 +1,6 @@
 print(" * Simple Calculator App * ")
 
-operator = input("What operation to use? (add, subtract, multiply, divide): ").lower
+operator = input("What operation to use? (add, subtract, multiply, divide): ")
 num1 = float(input("First Number: "))
 num2 = float(input("Second Number: ")) 
 
