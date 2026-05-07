@@ -18,16 +18,16 @@ class UserInput:
 class CalculatorFunctions(UserInput):
     def add(self):
         result= self.num1 + self.num2
-        print(f"Sum = {result}")
+        print(f"Sum: {self.num1} + {self.num2} = \033[91m{result}\033[0m\n")
 
     def subtract(self):
         result = self.num1 - self.num2
-        print(f"Difference = {result}")
+        print(f"Difference: {self.num1} - {self.num2} = \033[91m{result}\033[0m\n")
 
     def multiply(self):
         result = self.num1 * self.num2
-        print(f"Product = {result}")
+        print(f"Product: {self.num1} x {self.num2} = \033[91m{result}\033[0m\n")
 
     def divide(self):
         result = self.num1 / self.num2
-        print(f"Quotient = {result}")
+        print(f"Quotient: {self.num1} / {self.num2} = \033[91m{result}\033[0m\n")

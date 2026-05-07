@@ -1,6 +1,6 @@
 from calculator_functions import UserInput, CalculatorFunctions
+print(" * Simple Calculator App * \n")
 while True:
-    print(" * Simple Calculator App * \n")
 
     try:
         user = UserInput()
