@@ -19,6 +19,8 @@ while True:
         print("You Can't Divide by Zero 0!")
     except ValueError:
         print("Numbers Only Please!")
+    except Exception:
+        print("Something Went Wrong!")
 
 
     while True:
