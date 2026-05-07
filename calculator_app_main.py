@@ -18,6 +18,6 @@ while True:
         CalculatorFunctions.divide(user)
     
     choice=input("Operate more? (Y/N): ")
-    if choice != "N":
+    if choice.upper == "N":
         print("Thank you for using the application!")
         break
