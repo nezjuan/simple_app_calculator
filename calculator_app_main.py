@@ -1,21 +1,21 @@
 from calculator_functions import UserInput, CalculatorFunctions
 while True:
-    print(" * Simple Calculator App * ")
+    print(" * Simple Calculator App * \n")
 
     try:
         user = UserInput()
         user.ask_user(operator=None, num1=None, num2=None) 
 
-        if user.operator == "add":
+        if user.operator == "1":
             CalculatorFunctions.add(user)
 
-        elif user.operator == "subtract":
+        elif user.operator == "2":
             CalculatorFunctions.subtract(user)
 
-        elif user.operator == "multiply":
+        elif user.operator == "3":
             CalculatorFunctions.multiply(user)
 
-        elif user.operator == "divide":
+        elif user.operator == "4":
             CalculatorFunctions.divide(user)
 
     except ZeroDivisionError:
