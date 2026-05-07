@@ -4,18 +4,30 @@ operator = input("What operation to use? (add, subtract, multiply, divide): ")
 num1 = float(input("First Number: "))
 num2 = float(input("Second Number: ")) 
 
-if operator == "add":
-    result = num1 + num2
+def add():
+    result= num1 + num2
     print(f"Sum = {result}")
 
-elif operator == "subtract":
+def subtract():
     result = num1 - num2
-    print(f"Difference = {result}") 
+    print(f"Difference = {result}")
 
-elif operator == "multiply":
+def multiply():
     result = num1 * num2
     print(f"Product = {result}")
 
-elif operator == "divide":
+def divide():
     result = num1 / num2
     print(f"Quotient = {result}")
+
+if operator == "add":
+    add()
+
+elif operator == "subtract":
+    subtract()
+
+elif operator == "multiply":
+    multiply()
+
+elif operator == "divide":
+    divide()
